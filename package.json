@@ -1,5 +1,5 @@
 {
-  "name": "@sd/component-lazydiv",
+  "name": "sd-components",
   "version": "0.5.0",
   "description": "使用webp和小图技术用于处理图片懒加载",
   "main": "index.js",
