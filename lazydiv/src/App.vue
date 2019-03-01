@@ -6,7 +6,7 @@
     </div>
     <LazyDiv
       class="test"
-      src = "https://stage-gfw.deeda.care/deeda/images/medical/1.jpg"
+      src = "https://github.com/wuyxp/sd-components/blob/master/src/images/logo.jpg"
     >
       测试地址
     </LazyDiv>
