@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted() {
-    const minPic = this.src.replace(/(\.\w+)$/, '-min$1')
+    const minPic = this.src.replace(/\.(\w+?)(\?[\s\S]+)?$/,'-min.$1$2')
     this.loadMinPic(minPic)
   },
   methods: {

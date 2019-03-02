@@ -5,7 +5,7 @@
     </div>
     <LazyDiv
       class="test"
-      src = "https://raw.githubusercontent.com/wuyxp/sd-components/master/lazydiv/src/images/logo.jpg"
+      :src = "url"
     >
       测试地址11123
     </LazyDiv>
@@ -14,7 +14,13 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data(){
+    return {
+      url: require('./images/logo.jpg'),
+      onUrl: 'https://raw.githubusercontent.com/wuyxp/sd-components/master/lazydiv/src/images/logo.jpg'
+    }
+  }
 }
 </script>
 <style>
