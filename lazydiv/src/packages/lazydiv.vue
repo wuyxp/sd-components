@@ -1,8 +1,6 @@
 <template>
   <div :style="style" class="___container">
-    <div class="___container--slot">
-      <slot></slot>
-    </div>
+    <slot></slot>
     <transition name="___fade">
       <div class="___container--mask" v-if="maskShow" :style="maskStyle"></div>
     </transition>
@@ -88,6 +86,7 @@ export default {
 <style scoped>
   .___container {
     position: relative;
+    background-color: #aaaaaa
   }
   .___container--slot {
     position: relative;

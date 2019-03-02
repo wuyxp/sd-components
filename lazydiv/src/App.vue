@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div id="app">
     <div>
       正常背景图片
     </div>
@@ -8,9 +7,8 @@
       class="test"
       src = "https://raw.githubusercontent.com/wuyxp/sd-components/master/lazydiv/src/images/logo.jpg"
     >
-      测试地址
+      测试地址11123
     </LazyDiv>
-  </div>
   </div>
 </template>
 
