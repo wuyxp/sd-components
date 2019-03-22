@@ -8,6 +8,12 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'build.js'
   },
+  resolveLoader: {
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'src/loaders')
+    ]
+  },
   module: {
     rules: [
       {
@@ -32,10 +38,20 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]?[hash]'
-        }
+        use: [
+          {
+            loader: 'image-create-webp',
+            options: {
+              name: '[name].[ext]?[hash]'
+            }
+          },
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]?[hash]'
+            }
+          }
+        ]
       }
     ]
   },
@@ -48,7 +64,8 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    overlay: true
+    overlay: true,
+    open: false
   },
   performance: {
     hints: false
