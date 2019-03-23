@@ -1,7 +1,13 @@
 <template>
   <div id="app">
+    <LazyDiv
+      class="test"
+      :src = "require('./assets/bg.jpg')"
+    >
+      测试地址11123
+    </LazyDiv>
+    <div>需要把图片多生成出来几张的plugin</div>
     <img src="./assets/logo.png">
-    <div>需要把图片多生成出来几张的loader</div>
   </div>
 </template>
 
@@ -43,4 +49,8 @@ li {
 a {
   color: #42b983;
 }
+  .test {
+    width: 480px;
+    height: 300px;
+  }
 </style>

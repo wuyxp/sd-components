@@ -52,16 +52,21 @@ export default {
           backgroundImage: `url(${image.src})`
         }
         this.maskStyle = style
+        console.log('xxxxx')
         if (isSupportWebp()) {
+          console.log('1111')
           this.loadWebpPic(cb)
         } else {
+          console.log('2222')
           this.loadOriginPic(cb)
         }
       }, this.loadOriginPic.bind(this))
     },
     loadWebpPic(cb) {
-      const webpPic = this.src.replace(/(\.\w+)$/, '.webp')
+      const webpPic = this.src.replace(/(?:\.\w+)(\?|$)/, '.webp$1')
+      console.log(webpPic)
       this.loadImg(webpPic, image => {
+        console.log(image)
         const style = {
           backgroundImage: `url(${image.src})`
         }

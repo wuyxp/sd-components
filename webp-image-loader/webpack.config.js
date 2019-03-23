@@ -1,7 +1,11 @@
 var path = require('path')
 var webpack = require('webpack')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
+const WebpAndMiniPicPlugin = require('./src/plugins/toWebpAndMiniPic')
 
 module.exports = {
+  mode:'development',
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -39,12 +43,12 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
-          {
-            loader: 'image-create-webp',
-            options: {
-              name: '[name].[ext]?[hash]'
-            }
-          },
+          // {
+          //   loader: 'image-create-webp',
+          //   options: {
+          //     name: '[name].[ext]?[hash]'
+          //   }
+          // },
           {
             loader: 'file-loader',
             options: {
@@ -65,31 +69,17 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true,
-    open: false
+    port: 8000
   },
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins: [
+    new VueLoaderPlugin(),
+    new WebpAndMiniPicPlugin({
+      path: path.resolve(__dirname, './src/assets')
+    })
+  ]
 }
 
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
-  module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
-      }
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
-    })
-  ])
-}
