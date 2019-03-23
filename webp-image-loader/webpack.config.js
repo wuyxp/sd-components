@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //引入清除文件插件
 
 const WebpAndMiniPicPlugin = require('./src/plugins/toWebpAndMiniPic')
-
+const fileLoadPath = '[name]-[hash:16].[ext]'
 module.exports = {
   mode:'development',
   entry: './src/main.js',
@@ -42,19 +42,22 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|webp)$/,
         use: [
-          // {
-          //   loader: 'image-create-webp',
-          //   options: {
-          //     name: '[name].[ext]?[hash]'
-          //   }
-          // },
           {
             loader: 'file-loader',
             options: {
-              name: '[name]-[hash:8].[ext]'
+              name: fileLoadPath
             }
+          // },
+          // {
+          //   loader: 'image-create-webp',
+          //   options: {
+          //     path: {
+          //       dir: path.resolve(__dirname, './src/assets'),
+          //       include: ['bg']
+          //     }
+          //   }
           }
         ]
       }
@@ -84,6 +87,9 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new WebpAndMiniPicPlugin({
+      placeholder: fileLoadPath,
+      webpSrc: src => src.replace(/(?:\.\w+)(\?|$)/, '.webp$1'),
+      miniSrc: src => src.replace(/\.(\w+?)(\?[\s\S]+)?$/,'-min.$1$2'),
       path: {
         dir: path.resolve(__dirname, './src/assets'),
         include: ['bg']

@@ -19,6 +19,7 @@
 const fs = require('fs')
 const path = require('path')
 const sharp = require('sharp')
+const { interpolateName } = require('loader-utils')
 const utils = {
   isString(p) {
     return Object.prototype.toString.call(p) === '[object String]'
@@ -57,8 +58,11 @@ const utils = {
 class WebpAndMiniPicPlugin {
   constructor(options){
     // 最后需要得到一个paths的文件目录
-    const { path } = options
+    const { path, placeholder, webpSrc, miniSrc } = options
     this.path = path
+    this.placeholder = placeholder
+    this.webpSrc = webpSrc
+    this.miniSrc = miniSrc
   }
 
   /**
@@ -115,8 +119,16 @@ class WebpAndMiniPicPlugin {
     })
   }
   async makeWebp(compilation, fileInfo, fileContent) {
+    const loaderContext = {
+      resourcePath: fileInfo.dir + '/' + fileInfo.base
+    }
+    const str = interpolateName(loaderContext, this.placeholder, {
+      content: fileContent
+    });
+    const src = this.webpSrc(str)
+    // 使用sharp进行更改图片后缀
     const g = await sharp(fileContent).webp().toBuffer()
-    compilation.assets[fileInfo.name + '.webp'] = {
+    compilation.assets[src] = compilation.assets[fileInfo.name + '.webp'] = {
       source: function() {
         return g;
       },
@@ -126,9 +138,17 @@ class WebpAndMiniPicPlugin {
     };
   }
   async makeMini(compilation, fileInfo, fileContent) {
+    const loaderContext = {
+      resourcePath: fileInfo.dir + '/' + fileInfo.base
+    }
+    const str = interpolateName(loaderContext, this.placeholder, {
+      content: fileContent
+    });
+    const src = this.miniSrc(str)
+    console.log(src)
     // 使用sharp进行压缩图片
     const g = await sharp(fileContent).resize(100).sharpen().toBuffer()
-    compilation.assets[fileInfo.name + '-min'+ fileInfo.ext] = {
+    compilation.assets[src] = compilation.assets[fileInfo.name + '-min'+ fileInfo.ext] = {
       source: function() {
         return g;
       },
