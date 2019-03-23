@@ -1,6 +1,8 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path')
+const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin'); //引入清除文件插件
 
 const WebpAndMiniPicPlugin = require('./src/plugins/toWebpAndMiniPic')
 
@@ -9,7 +11,6 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
     filename: 'build.js'
   },
   resolveLoader: {
@@ -52,7 +53,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]?[hash]'
+              name: '[name]-[hash:8].[ext]'
             }
           }
         ]
@@ -77,8 +78,16 @@ module.exports = {
   devtool: '#eval-source-map',
   plugins: [
     new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      inject: 'body'
+    }),
+    new CleanWebpackPlugin(),
     new WebpAndMiniPicPlugin({
-      path: path.resolve(__dirname, './src/assets')
+      path: {
+        dir: path.resolve(__dirname, './src/assets'),
+        include: ['bg']
+      }
     })
   ]
 }
