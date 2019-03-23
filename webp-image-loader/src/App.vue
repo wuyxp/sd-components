@@ -52,5 +52,6 @@ a {
   .test {
     width: 480px;
     height: 300px;
+    background-size: contain;
   }
 </style>

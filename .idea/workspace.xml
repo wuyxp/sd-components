@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1cec910-0dcb-435b-82fd-dd5adc13ff31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webp-image-loader/src/assets/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webp-image-loader/src/plugins/toWebpAndMiniPic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lazydiv/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lazydiv/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lazydiv/src/packages/lazydiv.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lazydiv/src/packages/lazydiv.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webp-image-loader/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webp-image-loader/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webp-image-loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webp-image-loader/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webp-image-loader/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/webp-image-loader/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webp-image-loader/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/webp-image-loader/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webp-image-loader/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webp-image-loader/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webp-image-loader/src/plugins/toWebpAndMiniPic.js" beforeDir="false" afterPath="$PROJECT_DIR$/webp-image-loader/src/plugins/toWebpAndMiniPic.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +34,7 @@
           <entry key="json" value="4" />
           <entry key="lock" value="1" />
           <entry key="png" value="6" />
-          <entry key="vue" value="4" />
+          <entry key="vue" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -45,22 +43,22 @@
           <entry key="Image" value="9" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="8" />
-          <entry key="Vue.js" value="4" />
+          <entry key="Vue.js" value="5" />
           <entry key="yarn.lock" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="3398" />
+          <entry key="js" value="3711" />
           <entry key="json" value="33" />
-          <entry key="vue" value="268" />
+          <entry key="vue" value="287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="33" />
-          <entry key="JavaScript" value="3398" />
-          <entry key="Vue.js" value="268" />
+          <entry key="JavaScript" value="3711" />
+          <entry key="Vue.js" value="287" />
         </counts>
       </usages-collector>
     </session>
@@ -70,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webp-image-loader/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -79,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webp-image-loader/src/plugins/toWebpAndMiniPic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-252">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="326">
+              <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
               <folding>
                 <element signature="e#1282#2254#0" />
               </folding>
@@ -89,10 +87,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lazydiv/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webp-image-loader/src/loaders/image-create-webp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -105,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webp-image-loader/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="570">
+              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -114,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lazydiv/src/packages/lazydiv.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+            <state relative-caret-position="-270">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -163,11 +170,11 @@
       <list>
         <option value="$PROJECT_DIR$/webp-image-loader/package.json" />
         <option value="$PROJECT_DIR$/webp-image-loader/src/main.js" />
+        <option value="$PROJECT_DIR$/webp-image-loader/src/loaders/image-create-webp.js" />
+        <option value="$PROJECT_DIR$/webp-image-loader/webpack.config.js" />
         <option value="$PROJECT_DIR$/lazydiv/src/packages/lazydiv.vue" />
         <option value="$PROJECT_DIR$/webp-image-loader/src/App.vue" />
         <option value="$PROJECT_DIR$/webp-image-loader/src/plugins/toWebpAndMiniPic.js" />
-        <option value="$PROJECT_DIR$/webp-image-loader/src/loaders/image-create-webp.js" />
-        <option value="$PROJECT_DIR$/webp-image-loader/webpack.config.js" />
       </list>
     </option>
   </component>
@@ -229,13 +236,14 @@
             <path>
               <item name="sd-components" type="b2602c69:ProjectViewProjectNode" />
               <item name="sd-components" type="462c0819:PsiDirectoryNode" />
-              <item name="webp-image-loader" type="462c0819:PsiDirectoryNode" />
+              <item name="lazydiv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sd-components" type="b2602c69:ProjectViewProjectNode" />
               <item name="sd-components" type="462c0819:PsiDirectoryNode" />
               <item name="webp-image-loader" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sd-components" type="b2602c69:ProjectViewProjectNode" />
@@ -304,12 +312,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553263392299</updated>
-      <workItem from="1553263393644" duration="11125000" />
+      <workItem from="1553263393644" duration="13326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11125000" />
+    <option name="totallyTimeSpent" value="13326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="0" />
@@ -369,22 +377,8 @@
     <entry file="file://$PROJECT_DIR$/webp-image-loader/src/assets/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lazydiv/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lazydiv/src/images/logo.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lazydiv/src/packages/lazydiv.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webp-image-loader/src/assets/bg.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -399,17 +393,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webp-image-loader/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webp-image-loader/src/loaders/image-create-webp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webp-image-loader/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -420,17 +414,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webp-image-loader/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/lazydiv/src/packages/lazydiv.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        <state relative-caret-position="-270">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lazydiv/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webp-image-loader/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webp-image-loader/src/plugins/toWebpAndMiniPic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="326">
+          <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
           <folding>
             <element signature="e#1282#2254#0" />
           </folding>

@@ -52,12 +52,9 @@ export default {
           backgroundImage: `url(${image.src})`
         }
         this.maskStyle = style
-        console.log('xxxxx')
         if (isSupportWebp()) {
-          console.log('1111')
           this.loadWebpPic(cb)
         } else {
-          console.log('2222')
           this.loadOriginPic(cb)
         }
       }, this.loadOriginPic.bind(this))

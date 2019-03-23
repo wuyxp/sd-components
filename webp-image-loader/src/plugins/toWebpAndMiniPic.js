@@ -18,6 +18,7 @@
 
 const fs = require('fs')
 const path = require('path')
+const sharp = require('sharp')
 const utils = {
   isString(p) {
     return Object.prototype.toString.call(p) === '[object String]'
@@ -113,23 +114,26 @@ class WebpAndMiniPicPlugin {
       })
     })
   }
-  makeWebp(compilation, fileInfo, fileContent) {
+  async makeWebp(compilation, fileInfo, fileContent) {
+    const g = await sharp(fileContent).webp().toBuffer()
     compilation.assets[fileInfo.name + '.webp'] = {
       source: function() {
-        return fileContent;
+        return g;
       },
       size: function() {
-        return fileContent.length;
+        return g.length;
       }
     };
   }
-  makeMini(compilation, fileInfo, fileContent) {
+  async makeMini(compilation, fileInfo, fileContent) {
+    // 使用sharp进行压缩图片
+    const g = await sharp(fileContent).resize(100).sharpen().toBuffer()
     compilation.assets[fileInfo.name + '-min'+ fileInfo.ext] = {
       source: function() {
-        return fileContent;
+        return g;
       },
       size: function() {
-        return fileContent.length;
+        return g.length;
       }
     };
   }
