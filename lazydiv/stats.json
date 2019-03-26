@@ -1,0 +1,81 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "bb2bddc913615851c255",
+  "time": 2086,
+  "publicPath": "/dist/",
+  "assetsByChunkName": {
+    "main": [
+      "lazydiv.js",
+      "lazydiv.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "lazydiv.js",
+      "size": 7641,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "lazydiv.js.map",
+      "size": 58508,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "lazydiv.js",
+        "lazydiv.js.map"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 17920,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "lazydiv.js",
+        "lazydiv.js.map"
+      ],
+      "hash": "98064f2c32d6960fe4fd",
+      "parents": [],
+      "origins": [
+        {
+          "moduleId": 1,
+          "module": "/Users/wuyang/shuidi/component-lazydiv/lazydiv/node_modules/babel-loader/lib/index.js!/Users/wuyang/shuidi/component-lazydiv/lazydiv/src/index.js",
+          "moduleIdentifier": "/Users/wuyang/shuidi/component-lazydiv/lazydiv/node_modules/babel-loader/lib/index.js!/Users/wuyang/shuidi/component-lazydiv/lazydiv/src/index.js",
+          "moduleName": "./src/index.js",
+          "loc": "",
+          "name": "main",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "children": []
+}

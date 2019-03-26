@@ -32,6 +32,7 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "webpack-plugin-image-transform-webp-and-mini": "^1.0.2"
   }
 }

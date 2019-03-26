@@ -3,12 +3,12 @@
     <div>
       正常背景图片
     </div>
-    <LazyDiv
+    <LazyBackground
       class="test"
       :src = "url"
     >
       测试地址11123
-    </LazyDiv>
+    </LazyBackground>
   </div>
 </template>
 
