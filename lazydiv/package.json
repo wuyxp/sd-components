@@ -11,7 +11,8 @@
     "build": "NODE_ENV=production webpack --progress --hide-modules --config='./build/webpack.prod.config.js'  --profile --json > stats.json"
   },
   "dependencies": {
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-lazy-background-component": "^1.0.2"
   },
   "browserslist": [
     "> 1%",
